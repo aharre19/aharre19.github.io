@@ -13,16 +13,14 @@
     <p>This is a simple website for any future projects for my web devlopment class.</p>
     <p>As I continue through the course this site will be updated with links, different pages, and graphics.</p>
     <p>I haven't worked with html in a very long time so I'm still trying to figure out things as I go.</p>
+      <p> id ="waffles"></p>
     <script>
-      var jcontent - {
-  "Name":"Belgian Waffles", "Price":"$5.95", "Description":"Two of our famous Beligan Waffles with plenty of maple syrup", "Calories":"650",
-  "Name":"Strawberry Belgian Waffles", "Price":"$7.50", "Description":"Light Belgian waffles covered with strawberries and whipped cream", "Calories":"900",
-  "Name":"Berry-Berry Belgian Waffles", "Price":"$8.95", "Description":"Light Belgian waffles covered with an assortment of fresh berries and whipped cream", "Calories":"900",
-  "Name":"French Toast", "Price":"$4.50", "Description":"Thick slices made from our homemade sourdough bread", "Calroies":"600"},
-  "Name":"Homestyle Breakfast", "Price":"$6.95", "Description":"Two eggs, bacon or sausage, toast, and our ever-popular has browns","Calories":"950"
-        }
-      var waffles = document.getElementById('waffles');
-      waffles.innerHTML = jcontent.Name;
+     var obj = JSON.parse('{"Name":"Belgian Waffles", "Price":"$5.95", "Description":"Two of our famous Beligan Waffles with plenty of maple syrup", "Calories":"650"},
+  {"Name":"Strawberry Belgian Waffles", "Price":"$7.50", "Description":"Light Belgian waffles covered with strawberries and whipped cream", "Calories":"900"},
+  {"Name":"Berry-Berry Belgian Waffles", "Price":"$8.95", "Description":"Light Belgian waffles covered with an assortment of fresh berries and whipped cream", "Calories":"900"},
+  {"Name":"French Toast", "Price":"$4.50", "Description":"Thick slices made from our homemade sourdough bread", "Calroies":"600"},
+  {"Name":"Homestyle Breakfast", "Price":"$6.95", "Description":"Two eggs, bacon or sausage, toast, and our ever-popular has browns","Calories":"950"}');
+     document.getElementById("waffles").innerHTML = obj.Name + ", " + obj.Price + "," + obj.Description + "," + obj.Calories + ",";
       </script>
     </div>
   </body>
